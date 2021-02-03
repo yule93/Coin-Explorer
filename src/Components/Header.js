@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => <header>{/* Magic Here */}</header>;
+export default () => <header style="background-color: skyblue;">Coin Expoler</header>;

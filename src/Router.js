@@ -1,15 +1,15 @@
 import React from "react";
-import { Router, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import Coins from "./Screens/Coins";
 import Prices from "./Screens/Prices";
-import Excahnges from "./Screens/Excahnges";
+import Exchanges from "./Screens/Exchanges";
 
 export default () => {
-  return (
-    <Router>
-      <Route path="/" exact component={Prices} />
-      <Route path="/" exact component={Excahnges} />
-      <Route path="/" exact component={Coins} />
-    </Router>
-  );
+  <Router>
+  <>
+    <Route path="/prices" component={Prices} />
+    <Route path="/exchanges" component={Exchanges} />
+    <Route path="/coins" component={Coins} />
+  </>
+  </Router>
 };
